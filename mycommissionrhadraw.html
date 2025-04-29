@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Komisi Gambar - oleh [Nama Kamu]</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Komisi Gambar oleh RhaDraw</h1>
+    <p>Terima jasa ilustrasi digital & tradisional</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#form">Pesan</a>
+    <a href="#gallery">Galeri</a>
+  </nav>
+
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah ilustrator yang menerima komisi gambar untuk karakter, potret, hewan peliharaan, dan lainnya.</p>
+  </section>
+
+  <section id="form">
+    <h2>Formulir Pemesanan</h2>
+    <div class="form-container">
+      <form action="https://formspree.io/f/mldbgbpj" method="POST">
+        <label>Nama</label>
+        <input type="text" name="Nama" required />
+
+        <label>Email</label>
+        <input type="email" name="Email" required />
+
+        <label>Jenis Komisi</label>
+        <select name="Jenis Komisi" required>
+          <option>Fullbody</option>
+          <option>Halfbody</option>
+          <option>Bust up</option>
+          <option>Custom</option>
+        </select>
+
+        <label>Deskripsi Permintaan</label>
+        <textarea name="Deskripsi" rows="5" placeholder="Jelaskan pose, ekspresi, gaya, dll." required></textarea>
+
+        <label>Link Referensi (Google Drive, Imgur, dll)</label>
+        <input type="url" name="Link Referensi" placeholder="https://..." />
+
+        <button type="submit">Kirim Permintaan</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Galeri Karya</h2>
+    <div class="gallery">
+      <img src="1745934441233.jpg" alt="Karya 1"/>
+      <img src="IMG_20240522_184944.jpg" alt="Karya 2"/>
+      <img src="IMG_20250101_181523.jpg" alt="Karya 3"/>
+      <img src="IMG_20240626_013046-1.jpg" alt="Karya 4"/>
+      
+      <center>
+        <h1>pengerjaan bisa sampai 1-2 minggu sesuai kesulitan, namun jika permintaan menurut saya sulit, saya bisa saja menolak.</h1>
+        <div class="social-links">
+      <a href="https://youtube.com/@rhaxdrawing?si=9eFk9P611miRA-rm">YouTube</a>
+      <a href="https://chat.whatsapp.com/EScnsPJG52rLxrYov4CjFy">Grup WhatsApp</a>
+      <a href="https://www.instagram.com/rhadraw?igsh=MTV3bHllNDN5MHBqbQ==">Instagram</a>
+      </center>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RhaDraw | Kontak via Instagram: @rhadraw</p>
+  </footer>
+</body>
+</html>
